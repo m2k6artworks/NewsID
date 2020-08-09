@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "newsid",
+  "description": "simple latest news finder by m2k6",
+  "icons": {
+    "60": "/assets/firefox_app_60x60.png",
+    "128": "/assets/firefox_app_128x128.png",
+    "512": "/assets/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "m2k6.artworks",
+    "url": null
+  }
+}
