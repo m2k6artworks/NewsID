@@ -1,0 +1,170 @@
+/* Untuk Tablet */
+@media all and (max-width: 950px) 
+{
+  body
+  {
+    font-size: 14px;
+  }
+
+  .carousel img {
+    height: 450px;
+  }
+
+  .carousel , .carousel-inner , .carousel-item {
+    height: 545px;
+  }
+
+  .carousel-capt {
+    padding: 6.5em 4em;
+  }
+
+  .form-group {
+    margin-top: 2em;
+    padding: 0 4em;
+  }
+
+  .features {
+    width: 45%;
+  }
+
+  .foot-landing {
+    min-height: 430px;
+  }
+
+
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 750px) 
+{
+  body
+  {
+    font-size: 12px;
+  }
+
+  .carousel img {
+    height: 400px;
+  }
+
+  .carousel , .carousel-inner , .carousel-item {
+    height: 480px;
+  }
+
+  .content-header:after {
+    width: 20%;
+  }
+
+  .carousel-capt {
+    padding: 6.5em 4em;
+  }
+
+  .form-group {
+    margin-top: 2em;
+    padding: 0 4em;
+  }
+
+  .features {
+    width: 65%;
+  }
+
+  .support {
+    width: 50%;
+  }
+
+  .foot-landing {
+    min-height: 350px;
+  }
+
+}
+
+@media all and (max-width: 700px) 
+{
+  body
+  {
+    font-size: 12px;
+  }
+
+  .carousel img {
+    height: 350px;
+  }
+
+  .carousel , .carousel-inner , .carousel-item {
+    height: 430px;
+  }
+
+  .carousel-capt {
+    padding: 6.5em 4em;
+  }
+
+  .form-group {
+    margin-top: 2em;
+    padding: 0 4em;
+  }
+
+  .content-header:after {
+    width: 25%;
+  }
+
+  .features {
+    width: 70%;
+  }
+
+  .foot-landing {
+    min-height: 350px;
+  }
+
+  .foot-landing2 {
+    flex-direction: column;
+  }
+
+  .foot-right {
+    text-align: left !important;
+  }
+
+  .foot-right a {
+    color: white;
+  }
+}
+
+@media all and (max-width: 550px) 
+{
+
+  .carousel img {
+    height: 260px;
+  }
+
+  .carousel , .carousel-inner , .carousel-item {
+    height: 340px;
+  }
+
+  .content-header:after {
+    width: 35%;
+  }
+
+  .carousel-capt {
+    padding: 5em 1em;
+  }
+
+  .form-group {
+    margin-top: 2em;
+    padding: 0;
+  }
+
+  .features {
+    width: 80%;
+  }
+
+  .parent-reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews {
+    width: 80%;
+  }
+
+  .button-5
+  {
+    padding: 12px 12px;
+  }
+}
