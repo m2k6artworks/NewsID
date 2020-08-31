@@ -1,0 +1,6 @@
+node server.js
+npm run-script build
+git add .
+git commit -m "message"
+git push heroku master
+npm run start-dev
