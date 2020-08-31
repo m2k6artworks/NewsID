@@ -156,7 +156,8 @@ function main() {
             }
         });
 
-        getNewsHeadline();
+        getNewsResult("covid 19");
+        //getNewsHeadline();
 
         const btnNav = document.querySelector("#searchNav");
         btnNav.addEventListener("click", event => {
