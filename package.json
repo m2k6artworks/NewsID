@@ -12,7 +12,7 @@
     "build": "webpack --config webpack.prod.js",
     "start-dev": "webpack-dev-server --config webpack.dev.js --open"
   },
-  "homepage": "https://m2k6artworks.github.io/NewsID",
+  "homepage": "https://news-id.herokuapp.com/",
   "author": "m2k6.artworks",
   "license": "ISC",
   "devDependencies": {
