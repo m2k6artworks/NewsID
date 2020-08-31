@@ -2,10 +2,13 @@ import newsBg from '../images/news-id.svg';
 
 function main() {
 
-    const baseUrl = "https://newsapi.org/v2";
+    //const baseUrl = "https://newsapi.org/v2";
+    const baseUrl = "https://gnews.io/api/v3";
     const country = "country=id";
-    const apiKey = "apiKey=1054895aecda49198498ba73794c16c4";
-    const pageSize = "pageSize=20";
+    const lang = "lang=id";
+    //const apiKey = "apiKey=1054895aecda49198498ba73794c16c4";
+    const apiKey = "token=3b0e06793d6a316e571646270bcdd2fa";
+    //const pageSize = "pageSize=20";
     const modals = document.querySelector("#popModals");
     const newsBack = document.querySelector('#newsBack');
     
@@ -15,7 +18,7 @@ function main() {
     {
         try 
         {
-            const response = await fetch(`${baseUrl}/top-headlines?${country}&${pageSize}&${apiKey}`);
+            const response = await fetch(`${baseUrl}/top-news?${country}&${apiKey}`);
             const responseJson = await response.json();
             const titleHeader = `Indonesia Headline News`;
 
@@ -38,7 +41,7 @@ function main() {
     {
         try 
         {
-            const response = await fetch(`${baseUrl}/everything?q=${article}&${pageSize}&${apiKey}`);
+            const response = await fetch(`${baseUrl}/search?q=${article}&${apiKey}`);
             const responseJson = await response.json();
             let titleHeader;
 
@@ -72,7 +75,7 @@ function main() {
     {
         try 
         {
-            const response = await fetch(`${baseUrl}/top-headlines?${country}&category=${category}&${pageSize}&${apiKey}`);
+            const response = await fetch(`${baseUrl}/topics/${category}?${country}&${apiKey}`);
             const responseJson = await response.json();
             const titleHeader = `Headline ${category} News`;
 
@@ -111,7 +114,7 @@ function main() {
             <a class="revs reviews my-3 mx-1" target="_blank" href="${article.url}">
                     <div class="reviews-content w-100">
                         <div class="reviews-icon">
-                            <img src="${article.urlToImage}">
+                            <img src="${article.image}" alt="Image about ${article.title}">
                         </div>
                         <div class="reviews-text text-left pb-4">
                             <h4 class="bold">${article.title}</h4>
