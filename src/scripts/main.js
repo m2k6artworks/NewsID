@@ -1,4 +1,5 @@
 import newsBg from '../images/news-id.svg';
+import defImg from './../images/default.jpg';
 
 function main() {
 
@@ -110,6 +111,9 @@ function main() {
         listNews.innerHTML = "";
 
         articles.forEach(article => {
+            if(article.image == null) {
+                article.image = defImg
+            }
             listNews.innerHTML += `
             <a class="revs reviews my-3 mx-1" target="_blank" href="${article.url}">
                     <div class="reviews-content w-100">
