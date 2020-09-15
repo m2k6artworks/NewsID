@@ -1,5 +1,10 @@
 import newsBg from '../images/news-id.svg';
 import defImg from './../images/default.jpg';
+import $ from "jquery";
+
+$(document).ready(function(){
+    $(".preloader").fadeOut();
+})
 
 function main() {
 
@@ -156,7 +161,7 @@ function main() {
             }
         });
 
-        getNewsResult("covid 19");
+        getNewsResult("trending");
         //getNewsHeadline();
 
         const btnNav = document.querySelector("#searchNav");
@@ -171,7 +176,8 @@ function main() {
             btnCat.addEventListener("click", event => {
                 cekBox.checked = false;
                 const categoryName = event.target.id;
-                getNewsCategory(categoryName);
+                getNewsResult(categoryName);
+                // getNewsCategory(categoryName);
             })
         })
 

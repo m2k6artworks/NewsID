@@ -15,6 +15,43 @@
             color: #221F1F;
         }
 
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background-color: white;
+        }
+
+        .loading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .bouncing-ball {
+            margin-left: 20%;
+            margin-bottom: 20%;
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            animation-name: bouncing-ball;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bouncing-ball {
+            50% {
+                border-radius: 100px;
+                background-color: firebrick;
+            }        
+        }      
+
         .carousel-fade .carousel-item.active {
             z-index: 0 !important;
         }
