@@ -12,7 +12,6 @@ function main() {
     const baseUrl = "https://gnews.io/api/v3";
     const country = "country=id";
     const lang = "lang=id";
-    //const apiKey = "apiKey=1054895aecda49198498ba73794c16c4";
     const apiKey = "token=3b0e06793d6a316e571646270bcdd2fa";
     //const pageSize = "pageSize=20";
     const modals = document.querySelector("#popModals");
